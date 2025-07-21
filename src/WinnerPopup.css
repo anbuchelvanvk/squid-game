@@ -1,0 +1,31 @@
+
+.winner-toast {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28c76f;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.5rem;
+  z-index: 20;
+  animation: popfade 0.6s ease-in-out;
+}
+
+.winner-toast button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background: #fff;
+  color: #28c76f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes popfade {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
