@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/squid-game/static/css/main.82b0eee8.css",
+    "main.js": "/squid-game/static/js/main.3035341e.js",
+    "static/js/453.7361ab18.chunk.js": "/squid-game/static/js/453.7361ab18.chunk.js",
+    "index.html": "/squid-game/index.html",
+    "main.82b0eee8.css.map": "/squid-game/static/css/main.82b0eee8.css.map",
+    "main.3035341e.js.map": "/squid-game/static/js/main.3035341e.js.map",
+    "453.7361ab18.chunk.js.map": "/squid-game/static/js/453.7361ab18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82b0eee8.css",
+    "static/js/main.3035341e.js"
+  ]
+}
