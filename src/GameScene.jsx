@@ -4,7 +4,7 @@ import { OrbitControls, useGLTF, Environment, Text } from '@react-three/drei';
 import './GameScene.css';
 
 function Doll({ isRedLight }) {
-  const { scene } = useGLTF('/models/doll.glb');
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/models/doll.glb`);
   const ref = useRef();
 
   useFrame(() => {
@@ -16,11 +16,7 @@ function Doll({ isRedLight }) {
   return <primitive object={scene} ref={ref} position={[0, 2, -20]} scale={5} />;
 }
 
-function BackgroundModel() {
-  const { scene } = useGLTF('/models/rlgl.glb');
-  return <primitive object={scene} position={[0, -1, -10]} scale={5} />;
-}
-
+// BackgroundModel removed because rlgl.glb is missing from public/models
 function Player({ id, x, isRedLight, moveTrigger, onWin, onEliminate }) {
   const [position, setPosition] = useState([x, 0, 2]);
   const [status, setStatus] = useState('🟢 Ready');
@@ -82,7 +78,6 @@ export default function GameScene({ isRedLight, countdownDone, setEliminated, se
         <directionalLight position={[0, 10, 5]} intensity={1} />
         <Suspense fallback={null}>
           <Environment preset="sunset" background />
-          <BackgroundModel />
           <Doll isRedLight={isRedLight} />
 
           {/* Players */}

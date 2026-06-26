@@ -2,6 +2,7 @@
   "name": "squidgame",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anbuchelvanvk.github.io/squid-game/",
   "dependencies": {
     "@react-three/drei": "^10.5.1",
     "@react-three/fiber": "^9.2.0",
